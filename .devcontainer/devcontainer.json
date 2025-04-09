@@ -1,0 +1,17 @@
+{
+  "name": "Django Dev Container",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    "editor.formatOnSave": true
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-azuretools.vscode-docker"
+  ],
+  "forwardPorts": [8000],
+  "postCreateCommand": "pip install django",
+  "remoteUser": "root"
+}
