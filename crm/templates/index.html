@@ -1,0 +1,16 @@
+<!-- template.html -->
+{% load unicorn %}
+<html>
+    <head>
+        {% unicorn_scripts %}
+    </head>
+    <body>
+        {% csrf_token %}
+
+        <!-- Your component -->
+        {% unicorn 'MY_COMPONENT' %} 
+        <hr>
+        {% unicorn 'todo' %}
+
+    </body>
+</html>
